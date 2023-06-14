@@ -1,6 +1,7 @@
-# CSY2061-AS2
-<h2>[Click here to download apk](https://raw.githack.com/Uttam1211/CSY2061-AS2/main/app-debug.apk)<br></h2>
- [Download the APK here](https://raw.githack.com/Uttam1211/CSY2061-AS2/main/app-debug.apk)
+# CSY2061-AS2 
+#[Click here to download apk](https://raw.githack.com/Uttam1211/CSY2061-AS2/main/app-debug.apk)<br>
+[Download the APK here](https://raw.githack.com/Uttam1211/CSY2061-AS2/main/app-debug.apk)
+
 <br>
 Mobile application using Java,XML, SQLITE. E-Commerce soultution with functionality for both admin and user groups.
 
