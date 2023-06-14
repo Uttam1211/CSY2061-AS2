@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+
+    android:id="@+id/dialog_add_category"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/dialog_add_category_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_category"
+                android:fontFamily="@font/spotlight_typewriting"
+                android:textAlignment="center"
+                android:letterSpacing="0.1"
+                android:textColor="@color/red"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+             <EditText
+                android:id="@+id/text_add_category_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:autofillHints="emailAddress"
+                android:drawableStart="@drawable/outline_filter_list_24"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/special_elite"
+                android:hint="@string/category_name1"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/text_add_category_description"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:autofillHints="Memorable Word"
+                android:drawableStart="@drawable/baseline_description_24"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/special_elite"
+                android:hint="@string/category_description"
+                android:padding="15dp"
+                android:textColor="@color/black" />
+            <EditText
+                android:id="@+id/text_add_category_imageUrl"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:autofillHints="Memorable Word"
+                android:drawableStart="@drawable/baseline_description_24"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/special_elite"
+                android:hint="@string/paste_category_image_url"
+                android:padding="15dp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>

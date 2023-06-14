@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/animator/lift_on_touch.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_pressed="true">
+        <set>
+            <objectAnimator android:propertyName="translationZ"
+                android:duration="@android:integer/config_shortAnimTime"
+                android:valueTo="@dimen/cardview_default_elevation" />
+        </set>
+    </item>
+    <item>
+        <set>
+            <objectAnimator android:propertyName="translationZ"
+                android:duration="@android:integer/config_shortAnimTime"
+                android:valueTo="0dp" />
+        </set>
+    </item>
+</selector>

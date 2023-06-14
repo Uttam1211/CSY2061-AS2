@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:andriod="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:foreground="?attr/selectableItemBackground">
+        <LinearLayout
+            android:id="@+id/product_card_view"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="7dp"
+            android:gravity="center"
+            android:background="#F2FFFC">
+    <ImageView
+        android:id="@+id/product_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:src="@drawable/no_pictures"
+        android:scaleType="centerCrop"
+         />
+
+    <TextView
+        android:id="@+id/product_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="@string/name"/>
+            <TextView
+                android:id="@+id/product_price_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="10sp"
+                android:textStyle="italic"
+                android:text="@string/price"
+                android:layout_gravity="end"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

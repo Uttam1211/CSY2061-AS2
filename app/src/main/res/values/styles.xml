@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Menu1" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@color/menu_background_color</item>
+    </style>
+    <style name="AppTheme.font" parent="@style/TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/spotlight_typewriting</item>
+    </style>
+
+    <color name="menu_background_color">#F0FFF0</color>
+    <style name="CardView.Admin" parent="Theme.Material3.Light">
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:layout_width">66dp</item>
+        <item name="android:layout_height">61dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:alpha">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:stateListAnimator">@animator/lift_on_touch</item>
+
+
+
+    </style>
+
+    <style name="circleImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

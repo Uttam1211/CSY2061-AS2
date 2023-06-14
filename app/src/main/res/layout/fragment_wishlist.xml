@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_cart"
+    tools:context=".ui.cart.CartFragment">
+    <LinearLayout
+        android:id="@+id/cart_topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_margin="10dp">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/cart_appTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:layout_margin="10dp"
+        android:layout_below="@id/cart_topBar">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wishlist1"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="15dp"
+            />
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/cart_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+
+        android:layout_below="@id/cart_appTitle"
+        android:layout_margin="10dp"
+        android:visibility="visible">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/wishList_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_corners"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            android:visibility="invisible" />
+
+
+        <LinearLayout
+            android:id="@+id/cart_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cart_appTitle"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/empty_cart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/your_favorite_list_is_empty"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+
+
+</RelativeLayout>
